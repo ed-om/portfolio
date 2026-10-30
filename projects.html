@@ -9,7 +9,8 @@
 <body>
     <header>
         <h1>My Projects</h1>
-        <p>A closer look at the projects featured in my portfolio.</p>
+        <p>A closer look at selected software projects I have worked on.</p>
+
         <nav aria-label="Main navigation">
             <a href="index.html">Home</a> |
             <a href="index.html#about">About</a> |
@@ -22,57 +23,182 @@
     <hr>
 
     <main>
-        <section id="calculator">
-            <h2>1. Simple Calculator</h2>
-            <img src="images/project-calculator.png" alt="Terminal screenshot showing a calculator adding 12 and 30" width="375">
-            <p>A simple calculator that adds, subtracts, multiplies and divides two numbers.</p>
-            <h3>Example output</h3>
-            <pre><code>Simple Calculator
------------------
-Enter first number: 12
-Enter operator (+ - * /): +
-Enter second number: 30
+        <section id="project-summary">
+            <h2>Project Summary</h2>
 
-Result: 12 + 30 = 42</code></pre>
+            <table border="1" cellpadding="8" cellspacing="0">
+                <caption>Project Summary</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Project</th>
+                        <th scope="col">Language / Technologies</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Link</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Aposma</td>
+                        <td>C++, Python, Clang/LLVM</td>
+                        <td>2026</td>
+                        <td><a href="#aposma">View project</a></td>
+                    </tr>
+                    <tr>
+                        <td>ErgoCam</td>
+                        <td>JavaScript, React, MediaPipe</td>
+                        <td>2026</td>
+                        <td><a href="#ergocam">View project</a></td>
+                    </tr>
+                    <tr>
+                        <td>Touch Grass</td>
+                        <td>Kotlin, Android</td>
+                        <td>2026</td>
+                        <td><a href="#touch-grass">View project</a></td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th colspan="3" scope="row">Total projects</th>
+                        <td>3</td>
+                    </tr>
+                </tfoot>
+            </table>
         </section>
 
         <hr>
 
-        <section id="library-management">
-            <h2>2. Library Management System</h2>
-            <img src="images/project-library.png" alt="Terminal screenshot of a library menu and a borrowed book" width="375">
-            <p>A console program for borrowing and returning books.</p>
-            <h3>Options shown in the program</h3>
+        <section id="aposma">
+            <h2>1. Aposma — Local-First Code Intelligence Tool</h2>
+
+            <img src="images/aposma.jpg"
+                 alt="Screenshot of Aposma's command-line code intelligence workflow"
+                 width="400"
+                 height="250">
+
+            <p>
+                Aposma is a local-first code intelligence tool designed to review,
+                analyze, and document source code. It provides command-line workflows
+                for review, documentation, analysis, and history, with optional
+                AI-assisted review.
+            </p>
+
+            <p><strong>Status:</strong> In development.</p>
+
+            <h3>How I built it</h3>
             <ol>
-                <li>Add book</li>
-                <li>Borrow book</li>
-                <li>Return book</li>
-                <li>List books</li>
+                <li>Designed a command-line interface around review, docs, analyze, and history workflows.</li>
+                <li>Developed the C++ analysis component and connected it with Clang/LLVM.</li>
+                <li>Added a Python environment for the optional AI-assisted review workflow.</li>
+                <li>Tested the commands on source files and refined the analysis and review output.</li>
             </ol>
-            <h3>Example output</h3>
-            <pre><code>== Library Management ==
-1. Add book
-2. Borrow book
-3. Return book
-4. List books
-Choose: 2
-Borrowed: Clean Code</code></pre>
+
+            <h3>Technologies used</h3>
+            <ul>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Clang/LLVM</li>
+                <li>CMake</li>
+                <li>Git</li>
+            </ul>
         </section>
 
         <hr>
 
-        <section id="first-program">
-            <h2>3. My First Program</h2>
-            <p>My first Python output was <code>print("Hello, World!")</code>.</p>
-            <p>I later wrote a loop to print a greeting three times:</p>
-            <pre><code>for i in range(3):
-    print("Hello", i)</code></pre>
+        <section id="ergocam">
+            <h2>2. ErgoCam — AI Posture Coach</h2>
+
+            <img src="images/ergocam.jpg"
+                 alt="Screenshot of the ErgoCam posture coaching prototype"
+                 width="400"
+                 height="250">
+
+            <p>
+                ErgoCam is a computer-vision posture coaching prototype that uses pose
+                landmarks to examine body alignment while a person works. The prototype
+                explores signals such as neck alignment, shoulder symmetry, and forward lean.
+            </p>
+
+            <p><strong>Status:</strong> Prototype.</p>
+
+            <h3>How I built it</h3>
+            <ol>
+                <li>Set up the React and Vite application.</li>
+                <li>Connected the camera-based pose detection workflow using MediaPipe.</li>
+                <li>Used pose landmarks to calculate posture-related measurements.</li>
+                <li>Presented posture measurements and feedback in the application interface.</li>
+            </ol>
+
+            <h3>Technologies used</h3>
+            <ul>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Vite</li>
+                <li>MediaPipe Pose Landmarker</li>
+            </ul>
         </section>
 
         <hr>
 
-        <p><a href="index.html#projects">Back to the Projects section on my homepage</a></p>
-        <p><a href="index.html">Return to homepage</a></p>
+        <section id="touch-grass">
+            <h2>3. Touch Grass — Screen-Time App</h2>
+
+            <img src="images/touch-grass.jpg"
+                 alt="Screenshot of the Touch Grass Android application"
+                 width="200"
+                 height="350">
+
+            <p>
+                Touch Grass is an Android app project focused on screen-time awareness
+                and encouraging more intentional breaks from phone use.
+            </p>
+
+            <p><strong>Status:</strong> Android/Kotlin project.</p>
+
+            <h3>How I built it</h3>
+            <ol>
+                <li>Identified screen-time awareness as the main problem the app explores.</li>
+                <li>Set up the Android project using Kotlin.</li>
+                <li>Planned the app flow around helping users reflect on phone use and take breaks.</li>
+                <li>Developed and refined the application as an Android project.</li>
+            </ol>
+
+            <h3>Technologies used</h3>
+            <ul>
+                <li>Kotlin</li>
+                <li>Android Studio</li>
+                <li>Android SDK</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="references">
+            <h2>HTML Reference</h2>
+            <p>
+                For more information about HTML, visit the
+                <a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a>.
+            </p>
+
+            <p>
+                <a href="index.html#contact">
+                    Go directly to the Contact section on my homepage
+                </a>
+            </p>
+        </section>
+
+        <hr>
+
+        <p>
+            <a href="index.html#projects">
+                Back to the Projects section on my homepage
+            </a>
+        </p>
+
+        <p>
+            <a href="index.html">Return to homepage</a>
+        </p>
     </main>
 </body>
 </html>

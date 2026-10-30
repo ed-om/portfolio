@@ -9,8 +9,12 @@
 <body>
     <header>
         <h1>Edom Anteneh</h1>
-        <img src="images/profile.jpg" alt="Profile photo of Abebe Kebede" width="125">
-        <p>Software Engineering student and aspiring web developer.</p>
+        <img src="images/profile.jpg"
+             alt="Portrait of Edom Anteneh"
+             title="Edom Anteneh"
+             width="200"
+             height="200">
+        <p>Software Engineering student and aspiring developer.</p>
 
         <nav aria-label="Main navigation">
             <a href="#about">About</a> |
@@ -28,12 +32,15 @@
         <section id="about">
             <h2>About Me</h2>
             <p>
-                I am a 3rd year <strong>Software Engineering</strong> student.
-                I <em>really</em> enjoy building websites, and my current goal is to
-                <mark>become a full-stack web developer</mark>.
+                I am a 3<sup>rd</sup>-year <strong>Software Engineering</strong> student.
+                I <em>really</em> enjoy understanding how technology works and building
+                useful software. My goal is to become a versatile software developer.
             </p>
-            <p>Languages I have used: <strong>Python</strong>, C++ and a little JavaScript.</p>
-            <p>Fun fact: I drink 2 litres of H<sub>2</sub>O while coding every day.</p>
+            <p>
+                Languages I have used: <b>C++</b>, <b>Python</b>, and
+                <i>some</i> JavaScript.
+            </p>
+            <p>Fun fact: I try to drink 2 litres of H<sub>2</sub>O while coding every day.</p>
         </section>
 
         <hr>
@@ -43,8 +50,8 @@
             <blockquote>
                 “The best way to predict the future is to invent it.” — Alan Kay
             </blockquote>
-            <p>My teacher always says “practice beats theory”, so I code every day.</p>
-            <p>Book I am reading: <cite>Clean Code</cite> by Robert C. Martin.</p>
+            <p>My approach to learning is simple: <q>practice beats theory</q>.</p>
+            <p>One book I enjoy: <cite>Clean Code</cite> by Robert C. Martin.</p>
         </section>
 
         <hr>
@@ -53,77 +60,119 @@
             <h2>Skills</h2>
             <ul>
                 <li>Programming Languages
-                    <ul>
-                        <li>Python</li>
+                    <ul type="square">
                         <li>C++</li>
-                        <li>Java</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>Kotlin</li>
                     </ul>
                 </li>
-                <li>Web Development
-                    <ul>
+                <li>Web and App Development
+                    <ul type="circle">
                         <li>HTML</li>
-                        <li>CSS (learning)</li>
-                        <li>JavaScript (next)</li>
+                        <li>CSS</li>
+                        <li>React</li>
+                        <li>Android development fundamentals</li>
                     </ul>
                 </li>
-                <li>Soft Skills
+                <li>Developer Skills
                     <ul>
-                        <li>Teamwork</li>
-                        <li>Presenting</li>
+                        <li>Data structures and algorithms</li>
+                        <li>Git and GitHub</li>
+                        <li>Problem solving and teamwork</li>
                     </ul>
                 </li>
             </ul>
 
             <h3>My Learning Roadmap</h3>
-            <ol>
-                <li>HTML structure and content</li>
-                <li>CSS layout and design</li>
-                <li>JavaScript and the DOM</li>
-                <li>PHP and databases</li>
-                <li>Deploy my portfolio online</li>
+            <ol type="1">
+                <li>Strengthen data structures and algorithms.</li>
+                <li>Build deeper skills in web and application development.</li>
+                <li>Study AI, machine learning, and computer systems.</li>
+                <li>Explore cloud computing and cybersecurity fundamentals.</li>
+                <li>Build and deploy useful software projects.</li>
             </ol>
 
             <h3>Tools I Use</h3>
             <dl>
-                <dt>VS Code</dt>
-                <dd>The code editor I use for every lab.</dd>
+                <dt>VSCodium</dt>
+                <dd>My code editor for writing and organizing projects.</dd>
 
                 <dt>Chrome DevTools</dt>
-                <dd>Inspects the HTML of any page and helps me find mistakes.</dd>
+                <dd>Helps inspect web pages and troubleshoot HTML and browser behavior.</dd>
 
                 <dt>Git and GitHub</dt>
-                <dd>Saves versions of my code and shares my projects online.</dd>
+                <dd>Help track source-code changes and collaborate on software projects.</dd>
+
+                <dt>Linux</dt>
+                <dd>My development environment for programming and command-line work.</dd>
             </dl>
         </section>
 
         <hr>
 
         <section id="projects">
-            <h2>Projects</h2>
+            <h2>Featured Projects</h2>
 
             <article>
-                <h3>Simple Calculator</h3>
-                <img src="images/project-calculator.png" alt="Terminal screenshot of the Simple Calculator" width="250">
-                <p>A calculator that adds, subtracts, multiplies and divides.</p>
-            </article>
-
-            <article>
-                <h3>Library Management System</h3>
-                <img src="images/project-library.png" alt="Terminal screenshot of the Library Management System" width="250">
-                <p>A console program for borrowing and returning books.</p>
-            </article>
-
-            <article>
-                <h3>My First Program</h3>
+                <h3>Aposma — Local-First Code Intelligence Tool</h3>
+                <img src="images/aposma.jpg"
+                     alt="Screenshot of the Aposma command-line code intelligence tool"
+                     width="400"
+                     height="250">
                 <p>
-                    The first thing I wrote in Python was
-                    <code>print("Hello, World!")</code>. Later I wrote this loop:
+                    Aposma is a local-first code intelligence tool with command-line
+                    workflows for code review, documentation, analysis, and history.
+                    It combines a C++ analysis layer with optional AI-assisted review.
                 </p>
-                <pre><code>for i in range(3):
-    print("Hello", i)</code></pre>
+                <p><a href="projects.html#aposma">Read more about Aposma</a></p>
             </article>
 
-            <p><a href="projects.html">See all my projects →</a></p>
+            <article>
+                <h3>ErgoCam — AI Posture Coach</h3>
+                <img src="images/ergocam.jpg"
+                     alt="Screenshot of the ErgoCam posture feedback prototype"
+                     width="400"
+                     height="250">
+                <p>
+                    ErgoCam is a computer-vision posture coaching prototype. It uses
+                    pose landmarks to examine posture signals such as neck alignment,
+                    shoulder symmetry, and forward lean.
+                </p>
+                <p><a href="projects.html#ergocam">Read more about ErgoCam</a></p>
+            </article>
+
+            <article>
+                <h3>Touch Grass — Screen-Time App</h3>
+                <img src="images/touch-grass.jpg"
+                     alt="Screenshot of the Touch Grass Android screen-time app"
+                     width="200"
+                     height="350">
+                <p>
+                    Touch Grass is an Android app project focused on screen-time
+                    awareness and encouraging more intentional breaks from the phone.
+                </p>
+                <p><a href="projects.html#touch-grass">Read more about Touch Grass</a></p>
+            </article>
+
+            <h3>My First Program</h3>
+            <p>
+                One of the first things I wrote in Python was
+                <code>print("Hello, World!")</code>. Later, I practiced loops:
+            </p>
+            <pre><code>for i in range(3):
+    print("Hello", i)</code></pre>
+
+            <p>I also practiced basic output in C++:</p>
+            <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "Hello, World!" &lt;&lt; endl;
+    return 0;
+}</code></pre>
+
+            <p><a href="projects.html">See all project details and the project summary table →</a></p>
         </section>
 
         <hr>
@@ -133,7 +182,7 @@
             <h3>BSc in Software Engineering</h3>
             <p>Addis Ababa Science and Technology University, 2024 – present</p>
 
-            <table border="1">
+            <table border="1" cellpadding="8" cellspacing="0">
                 <caption>Academic Record — BSc in Software Engineering</caption>
                 <thead>
                     <tr>
@@ -180,12 +229,14 @@
                         <td>4</td>
                         <td>A</td>
                     </tr>
+                </tbody>
+                <tfoot>
                     <tr>
                         <th colspan="3" scope="row">Total credit hours</th>
-                        <td>23</td>
+                        <th scope="row">23</th>
                         <td></td>
                     </tr>
-                </tbody>
+                </tfoot>
             </table>
         </section>
 
@@ -198,18 +249,37 @@
                 Ethiopia
             </address>
 
-            <p>Email: <a href="blessededom1@gmail.com">blessededom1@gmail.com</a></p>
-            <p>Phone: <a href="tel:+251941145494">+251 941145494</a></p>
+            <p>Email: <a href="mailto:blessededom1@gmail.com">blessededom1@gmail.com</a></p>
+            <p>Phone: <a href="tel:+251941145494">+251 941 145 494</a></p>
             <p>GitHub: <a href="https://github.com/ed-om">github.com/ed-om</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/edom-anteneh-alemu">linkedin.com/in/edom-anteneh-alemu</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/edom-anteneh-alemu">linkedin.com/in/edom-anteneh-alemu</a></p>
             <p><a href="files/cv.pdf" download>Download my CV (PDF)</a></p>
 
             <h3>Connect with me</h3>
-            <img src="images/connect-banner.png" alt="Connect with me on GitHub, LinkedIn or by email" width="375">
+            <img src="images/connect-banner.png"
+                 usemap="#connectmap"
+                 alt="Connect banner with clickable GitHub, LinkedIn, and email areas"
+                 width="600"
+                 height="200">
+            <map name="connectmap">
+                <area shape="rect"
+                      coords="20,40,180,160"
+                      href="https://github.com/ed-om"
+                      alt="Visit my GitHub profile">
+                <area shape="circle"
+                      coords="300,100,70"
+                      href="https://www.linkedin.com/in/edom-anteneh-alemu"
+                      alt="Visit my LinkedIn profile">
+                <area shape="rect"
+                      coords="420,40,580,160"
+                      href="mailto:blessededom1@gmail.com"
+                      alt="Send me an email">
+            </map>
+
             <p>
                 <a href="https://github.com/ed-om">GitHub</a> |
-                <a href="https://linkedin.com/in/edom-anteneh-alemu">LinkedIn</a> |
-                <a href="blessededom1@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/edom-anteneh-alemu">LinkedIn</a> |
+                <a href="mailto:blessededom1@gmail.com">Email</a>
             </p>
         </section>
     </main>
