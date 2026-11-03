@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edom Anteneh | Portfolio</title>
     <link rel="icon" href="images/favicon.png" type="image/png">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
 </head>
 <body>
     <header>
@@ -81,13 +82,15 @@
 
             <h3>A Talk I Recommend</h3>
 
-            <iframe src="https://www.youtube.com/watch?v=5MuIMqhT8DM&pp=ygUIdGVkIHRhbGs%3D"
-                    width="560"
-                    height="315"
-                    title="Sleep Is Your Superpower | Matt Walker | TED
-"
-                    allowfullscreen>
-            </iframe>
+            <iframe
+    src="https://www.youtube.com/embed/5MuIMqhT8DM"
+    width="560"
+    height="315"
+    title="Sleep Is Your Superpower | Matt Walker | TED"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+</iframe>
         </aside>
 
         <hr>
@@ -105,6 +108,7 @@
 
         <section id="skills">
             <h2>Skills</h2>
+
             <ul>
                 <li>Programming Languages
                     <ul type="square">
@@ -114,14 +118,16 @@
                         <li>Kotlin</li>
                     </ul>
                 </li>
+
                 <li>Web and App Development
                     <ul type="circle">
-                        <li>HTML</li>
+                        <li><abbr title="HyperText Markup Language">HTML</abbr></li>
                         <li>CSS</li>
                         <li>React</li>
                         <li>Android development fundamentals</li>
                     </ul>
                 </li>
+
                 <li>Developer Skills
                     <ul>
                         <li>Data structures and algorithms</li>
@@ -132,6 +138,7 @@
             </ul>
 
             <h3>My Learning Roadmap</h3>
+
             <ol type="1">
                 <li>Strengthen data structures and algorithms.</li>
                 <li>Build deeper skills in web and application development.</li>
@@ -141,6 +148,7 @@
             </ol>
 
             <h3>Tools I Use</h3>
+
             <dl>
                 <dt>VSCodium</dt>
                 <dd>My code editor for writing and organizing projects.</dd>
@@ -154,6 +162,42 @@
                 <dt>Linux</dt>
                 <dd>My development environment for programming and command-line work.</dd>
             </dl>
+
+            <h3>Skill Levels</h3>
+
+            <p>
+                <label for="lvl-cpp">C++</label>
+                <meter id="lvl-cpp" value="0.85" min="0" max="1">85%</meter>
+            </p>
+
+            <p>
+                <label for="lvl-python">Python</label>
+                <meter id="lvl-python" value="0.65" min="0" max="1">65%</meter>
+            </p>
+
+            <p>
+                <label for="lvl-js">JavaScript</label>
+                <meter id="lvl-js" value="0.65" min="0" max="1"
+                       low="0.3" high="0.7" optimum="1">65%</meter>
+            </p>
+
+            <p>
+                <label for="lvl-html">HTML &amp; CSS</label>
+                <meter id="lvl-html" value="0.7" min="0" max="1">70%</meter>
+            </p>
+
+            <p>
+                <label for="lvl-kotlin">Kotlin</label>
+                <meter id="lvl-kotlin" value="0.35" min="0" max="1"
+                       low="0.3" high="0.7" optimum="1">35%</meter>
+            </p>
+
+            <h3>My Skill Chart</h3>
+
+            <canvas id="skillChart" width="300" height="170">
+                Skill chart: C++ 85%, Python 65%, JavaScript 65%,
+                HTML and CSS 70%, Kotlin 35%.
+            </canvas>
         </section>
 
         <hr>
