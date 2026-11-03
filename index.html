@@ -7,6 +7,67 @@
     <link rel="icon" href="images/favicon.png" type="image/png">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 </head>
+<script>
+function drawSkillChart() {
+    const canvas = document.getElementById("skillChart");
+
+    if (!canvas) {
+        console.error("Canvas element not found!");
+        return;
+    }
+
+    const ctx = canvas.getContext("2d");
+
+    if (!ctx) {
+        console.error("Canvas context unavailable!");
+        return;
+    }
+
+    const skills = [
+        { name: "C++", value: 85 },
+        { name: "Python", value: 65 },
+        { name: "JavaScript", value: 65 },
+        { name: "HTML/CSS", value: 70 },
+        { name: "Kotlin", value: 35 }
+    ];
+
+    ctx.clearRect(0, 0, 450, 220);
+
+    ctx.fillStyle = "#f0f0f0";
+    ctx.fillRect(0, 0, 450, 220);
+
+    ctx.font = "bold 14px Arial";
+    ctx.fillStyle = "#222";
+    ctx.textAlign = "center";
+    ctx.fillText("MY SKILL LEVELS", 225, 20);
+
+    ctx.strokeStyle = "#999";
+    ctx.beginPath();
+    ctx.moveTo(20, 180);
+    ctx.lineTo(435, 180);
+    ctx.stroke();
+
+    skills.forEach(function(skill, index) {
+        const x = 35 + index * 82;
+        const height = skill.value;
+
+        ctx.fillStyle = "#1f5fa8";
+        ctx.fillRect(x, 175 - height, 40, height);
+
+        ctx.fillStyle = "#222";
+        ctx.font = "12px Arial";
+
+        ctx.fillText(skill.value + "%", x + 20, 165 - height);
+        ctx.fillText(skill.name, x + 20, 200);
+    });
+}
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", drawSkillChart);
+} else {
+    drawSkillChart();
+}
+</script>
 <body>
     <header>
         <h1>Edom Anteneh</h1>
@@ -192,12 +253,13 @@
                        low="0.3" high="0.7" optimum="1">35%</meter>
             </p>
 
-            <h3>My Skill Chart</h3>
 
-            <canvas id="skillChart" width="300" height="170">
-                Skill chart: C++ 85%, Python 65%, JavaScript 65%,
-                HTML and CSS 70%, Kotlin 35%.
-            </canvas>
+<h3>My Skill Chart</h3>
+
+<canvas id="skillChart" width="450" height="220"
+        style="border: 1px solid black;">
+    Your browser does not support canvas.
+</canvas>
         </section>
 
         <hr>
@@ -271,7 +333,17 @@ int main() {
         <section id="education">
             <h2>Education</h2>
             <h3>BSc in Software Engineering</h3>
-            <p>Addis Ababa Science and Technology University, 2024 – present</p>
+            <p>
+                Addis Ababa Science and Technology University
+                (<abbr title="Addis Ababa Science and Technology University">AASTU</abbr>),
+                <time datetime="2024">2024</time> – present
+            </p>
+
+            <p>
+                <label for="degree">Degree progress:</label>
+                <progress id="degree" value="40" max="100">40%</progress>
+                40%
+            </p>
 
             <table border="1" cellpadding="8" cellspacing="0">
                 <caption>Academic Record — BSc in Software Engineering</caption>
