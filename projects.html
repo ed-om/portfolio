@@ -1,15 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Edom Anteneh's software development projects, including Aposma, ErgoCam, and Touch Grass.">
+    <meta name="keywords" content="Edom Anteneh, software projects, Aposma, ErgoCam, Touch Grass, C++, Python, React, Kotlin">
+    <meta name="author" content="Edom Anteneh">
     <title>Projects | Edom Anteneh</title>
     <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 <body>
     <header>
         <h1>My Projects</h1>
-        <p>A closer look at selected software projects I have worked on.</p>
+
+        <p>
+            A closer look at selected software projects I have worked on.
+        </p>
 
         <nav aria-label="Main navigation">
             <a href="index.html">Home</a> |
@@ -20,14 +27,13 @@
         </nav>
     </header>
 
-    <hr>
-
     <main>
         <section id="project-summary">
             <h2>Project Summary</h2>
 
             <table border="1" cellpadding="8" cellspacing="0">
                 <caption>Project Summary</caption>
+
                 <thead>
                     <tr>
                         <th scope="col">Project</th>
@@ -41,19 +47,21 @@
                     <tr>
                         <td>Aposma</td>
                         <td>C++, Python, Clang/LLVM</td>
-                        <td>2026</td>
+                        <td><time datetime="2026">2026</time></td>
                         <td><a href="#aposma">View project</a></td>
                     </tr>
+
                     <tr>
                         <td>ErgoCam</td>
                         <td>JavaScript, React, MediaPipe</td>
-                        <td>2026</td>
+                        <td><time datetime="2026">2026</time></td>
                         <td><a href="#ergocam">View project</a></td>
                     </tr>
+
                     <tr>
                         <td>Touch Grass</td>
                         <td>Kotlin, Android</td>
-                        <td>2026</td>
+                        <td><time datetime="2026">2026</time></td>
                         <td><a href="#touch-grass">View project</a></td>
                     </tr>
                 </tbody>
@@ -67,9 +75,7 @@
             </table>
         </section>
 
-        <hr>
-
-        <section id="aposma">
+        <article id="aposma">
             <h2>1. Aposma — Local-First Code Intelligence Tool</h2>
 
             <img src="images/aposma.jpg"
@@ -86,15 +92,31 @@
 
             <p><strong>Status:</strong> In development.</p>
 
-            <h3>How I built it</h3>
-            <ol>
-                <li>Designed a command-line interface around review, docs, analyze, and history workflows.</li>
-                <li>Developed the C++ analysis component and connected it with Clang/LLVM.</li>
-                <li>Added a Python environment for the optional AI-assisted review workflow.</li>
-                <li>Tested the commands on source files and refined the analysis and review output.</li>
-            </ol>
+            <details>
+                <summary>How I built it</summary>
+
+                <ol>
+                    <li>
+                        Designed a command-line interface around review, docs,
+                        analyze, and history workflows.
+                    </li>
+                    <li>
+                        Developed the C++ analysis component and connected it
+                        with Clang/LLVM.
+                    </li>
+                    <li>
+                        Added a Python environment for the optional
+                        AI-assisted review workflow.
+                    </li>
+                    <li>
+                        Tested the commands on source files and refined
+                        the analysis and review output.
+                    </li>
+                </ol>
+            </details>
 
             <h3>Technologies used</h3>
+
             <ul>
                 <li>C++</li>
                 <li>Python</li>
@@ -102,11 +124,9 @@
                 <li>CMake</li>
                 <li>Git</li>
             </ul>
-        </section>
+        </article>
 
-        <hr>
-
-        <section id="ergocam">
+        <article id="ergocam">
             <h2>2. ErgoCam — AI Posture Coach</h2>
 
             <img src="images/ergocam.jpg"
@@ -115,33 +135,45 @@
                  height="250">
 
             <p>
-                ErgoCam is a computer-vision posture coaching prototype that uses pose
-                landmarks to examine body alignment while a person works. The prototype
-                explores signals such as neck alignment, shoulder symmetry, and forward lean.
+                ErgoCam is a computer-vision posture coaching prototype that uses
+                pose landmarks to examine body alignment while a person works.
+                The prototype explores signals such as neck alignment,
+                shoulder symmetry, and forward lean.
             </p>
 
             <p><strong>Status:</strong> Prototype.</p>
 
-            <h3>How I built it</h3>
-            <ol>
-                <li>Set up the React and Vite application.</li>
-                <li>Connected the camera-based pose detection workflow using MediaPipe.</li>
-                <li>Used pose landmarks to calculate posture-related measurements.</li>
-                <li>Presented posture measurements and feedback in the application interface.</li>
-            </ol>
+            <details>
+                <summary>How I built it</summary>
+
+                <ol>
+                    <li>Set up the React and Vite application.</li>
+                    <li>
+                        Connected the camera-based pose detection workflow
+                        using MediaPipe.
+                    </li>
+                    <li>
+                        Used pose landmarks to calculate posture-related
+                        measurements.
+                    </li>
+                    <li>
+                        Presented posture measurements and feedback
+                        in the application interface.
+                    </li>
+                </ol>
+            </details>
 
             <h3>Technologies used</h3>
+
             <ul>
                 <li>JavaScript</li>
                 <li>React</li>
                 <li>Vite</li>
                 <li>MediaPipe Pose Landmarker</li>
             </ul>
-        </section>
+        </article>
 
-        <hr>
-
-        <section id="touch-grass">
+        <article id="touch-grass">
             <h2>3. Touch Grass — Screen-Time App</h2>
 
             <img src="images/touch-grass.jpg"
@@ -150,26 +182,68 @@
                  height="350">
 
             <p>
-                Touch Grass is an Android app project focused on screen-time awareness
-                and encouraging more intentional breaks from phone use.
+                Touch Grass is an Android app project focused on screen-time
+                awareness and encouraging more intentional breaks from phone use.
             </p>
 
             <p><strong>Status:</strong> Android/Kotlin project.</p>
 
-            <h3>How I built it</h3>
-            <ol>
-                <li>Identified screen-time awareness as the main problem the app explores.</li>
-                <li>Set up the Android project using Kotlin.</li>
-                <li>Planned the app flow around helping users reflect on phone use and take breaks.</li>
-                <li>Developed and refined the application as an Android project.</li>
-            </ol>
+            <details>
+                <summary>How I built it</summary>
+
+                <ol>
+                    <li>
+                        Identified screen-time awareness as the main problem
+                        the app explores.
+                    </li>
+                    <li>
+                        Set up the Android project using Kotlin.
+                    </li>
+                    <li>
+                        Planned the app flow around helping users reflect
+                        on phone use and take breaks.
+                    </li>
+                    <li>
+                        Developed and refined the application as an Android project.
+                    </li>
+                </ol>
+            </details>
 
             <h3>Technologies used</h3>
+
             <ul>
                 <li>Kotlin</li>
                 <li>Android Studio</li>
                 <li>Android SDK</li>
             </ul>
+        </article>
+
+        <section id="project-demo">
+            <h2>Project Demonstration Video</h2>
+
+            <p>
+                This section uses the demonstration media supplied with
+                the Part II lab starter pack. Replace these files with
+                a recording of one of your own projects when available.
+            </p>
+
+            <video controls
+                   poster="images/project-demo-poster.jpg"
+                   width="640"
+                   height="360">
+
+                <source src="media/project-demo.mp4" type="video/mp4">
+
+                <source src="media/project-demo.webm" type="video/webm">
+
+                <track src="media/project-demo.vtt"
+                       kind="captions"
+                       srclang="en"
+                       label="English"
+                       default>
+
+                Your browser does not support the video tag.
+            </video>
         </section>
 
         <hr>
