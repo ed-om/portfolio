@@ -42,7 +42,7 @@ Clone the repository:
 git clone https://github.com/ed-om/edomanteneh.git
 ```
 
-Open `portfolio/index.html` in your web browser.
+Open `portfolio/index.html` using your IDE's Live Server to see the fully functional YouTube and Project demonstration video.  
 
 ## Author
 
