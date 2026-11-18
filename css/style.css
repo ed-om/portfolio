@@ -385,3 +385,10 @@ footer {
 dialog::backdrop {
     background-color: rgba(11, 45, 85, 0.6);
 }
+.card img {
+    opacity: 0.85;
+}
+
+.card:hover img {
+    opacity: 1;
+}
