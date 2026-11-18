@@ -5,8 +5,9 @@
    Light: #f4f6f9
 */
 body {
-    background-color: #f4f6f9;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /*
