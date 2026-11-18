@@ -190,3 +190,35 @@ h2::before {
 h2 + p::first-line {
     font-weight: 600;
 }
+a:link {
+    color: #1f5fa8;
+}
+
+a:visited {
+    color: #6a3fa0;
+}
+
+a:hover {
+    color: hsl(37, 91%, 45%);
+    text-decoration: underline;
+}
+
+a:active {
+    color: #b03a2e;
+}
+
+.btn:hover {
+    background-color: #174a84;
+}
+
+.btn-secondary:hover {
+    background-color: #445566;
+}
+
+ol li:first-child {
+    font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eef2f7;
+}
