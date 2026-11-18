@@ -338,3 +338,25 @@ caption {
 ul ul {
     list-style-type: square;
 }
+header h1 {
+    color: white;
+}
+
+header .tagline {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+header nav a:link,
+header nav a:visited {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+header .btn {
+    background-color: hsl(37, 91%, 55%);
+    color: #22313f;
+}
