@@ -19,8 +19,10 @@ main {
 }
 
 header {
-    text-align: center;
-    padding: 2rem 1rem;
+    background-image:
+        url("../images/pattern.jpg"),
+        linear-gradient(135deg, #1f5fa8, #0b2d55);
+    color: white;
 }
 
 footer {
@@ -315,4 +317,24 @@ input[type="date"],
 select,
 textarea {
     padding: 0.4rem;
+}
+table {
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #c5d0de;
+    padding: 0.5rem 0.75rem;
+}
+
+caption {
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+ul ul {
+    list-style-type: square;
 }
