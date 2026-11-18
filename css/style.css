@@ -133,7 +133,36 @@ legend ~ label {
 /*p {
     color: red;
 }
-*/
+
 p {
     color: red !important;
+}
+
+header p {
+    color: green;
+}
+
+header .tagline {
+    color: purple;
+}
+*/
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    border: 2px solid #1f5fa8;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+abbr[title] {
+    cursor: help;
+    text-decoration: underline dotted;
+}
+
+[class*="btn"] {
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
