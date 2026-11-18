@@ -14,7 +14,9 @@ edomanteneh/
     ├── project.html
     ├── projects.html
     ├── images/
-    └── files/
+    ├── files/
+    └── css/
+        └── style.css/
 ```
 
 ## Portfolio Sections
