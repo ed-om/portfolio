@@ -58,6 +58,7 @@ h1, h2, h3 {
 }
 
 /* Components */
+
 .tagline {
     text-align: center;
     font-size: 1.2rem;
@@ -106,4 +107,7 @@ blockquote {
 
 code, pre {
     font-family: 'Courier New', monospace;
+}
+#contact {
+    background-color: #e8eef6;
 }
