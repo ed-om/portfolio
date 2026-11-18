@@ -35,6 +35,7 @@ edomanteneh/
 - HTML5
 - Git
 - GitHub
+- CSS
 
 ## Running Locally
 
