@@ -111,3 +111,21 @@ code, pre {
 #contact {
     background-color: #e8eef6;
 }
+
+nav a {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.card > p {
+    color: #5a6b7d;
+}
+
+h2 + p {
+    font-size: 1.1rem;
+}
+
+legend ~ label {
+    font-weight: 600;
+}
